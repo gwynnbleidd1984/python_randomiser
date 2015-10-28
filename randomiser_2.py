@@ -11,6 +11,9 @@ while True:
 while True:
     try:
         variant = int(input ('Input please the quantity of chosen options: '))
+        if variant>chislo:
+            print("You have chosen too much options." "\nPlease try again")
+            continue
         break
     except(TypeError, ValueError):
         print ("This is not an integer. Please input an integer")
